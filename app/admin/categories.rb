@@ -5,9 +5,18 @@ ActiveAdmin.register Category do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  # permit_params :title
+  permit_params :title
   #
   # or
+
+  form do |f|
+    f.semantic_errors # shows errors on :base
+    f.inputs          # builds an input field for every attribute
+    f.inputs do
+      f.input :image, as: :file
+    end
+    f.actions         # adds the 'Submit' and 'Cancel' buttons
+   end
   #
   # permit_params do
   #   permitted = [:title]

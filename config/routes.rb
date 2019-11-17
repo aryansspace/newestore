@@ -16,6 +16,10 @@ Rails.application.routes.draw do
     resources :products, only: [:index]
   end
 
+  devise_for :users, controllers: {
+    registrations: 'registrations'
+  }
+
   ActiveAdmin.routes(self)
 end
 

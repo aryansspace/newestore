@@ -28,7 +28,7 @@ gem 'activeadmin'
 gem 'devise'
 gem 'kaminari'
 gem "mini_magick"
-gem 'simple_form'
+# gem 'simple_form'
 gem 'carrierwave', '~> 2.0'
 gem 'figaro'
 gem 'fog'

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  
   devise_for :admin_users, ActiveAdmin::Devise.config
   get 'products/index'
   get 'products/show'
@@ -16,9 +17,11 @@ Rails.application.routes.draw do
     resources :products, only: [:index]
   end
 
-  devise_for :users, controllers: {
-    registrations: 'registrations'
-  }
+  devise_for :users
+
+  # devise_for :users, controllers: {
+  #   registrations: 'registrations'
+  # }
 
   ActiveAdmin.routes(self)
 end

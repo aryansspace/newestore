@@ -23,6 +23,10 @@ Rails.application.routes.draw do
   #   registrations: 'registrations'
   # }
 
+  # New 
+  get '/cart', to: 'order_items#index'
+  resources :order_items, path: '/cart/items'
+
   ActiveAdmin.routes(self)
 end
 

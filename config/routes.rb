@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   get 'products/show_all_pros'
   get 'categories/index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-
+ root 'categories#index'
+ 
   resources :products, only: :show do
     collection do
       get 'products_index'

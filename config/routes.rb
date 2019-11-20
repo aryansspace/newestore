@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   
   get 'orders/new'
   devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   get 'products/index'
   get 'products/show'
   get 'products/show_all_pros'
@@ -19,11 +20,11 @@ Rails.application.routes.draw do
     resources :products, only: [:index]
   end
 
-  devise_for :users
+  # devise_for :users
 
-  # devise_for :users, controllers: {
-  #   registrations: 'registrations'
-  # }
+  devise_for :users, controllers: {
+    registrations: 'registrations'
+  }
 
   # New 
   get '/cart', to: 'order_items#index'
@@ -32,7 +33,6 @@ Rails.application.routes.draw do
   get '/cart/checkout', to: 'orders#new', as: :checkout
   patch '/cart/checkout', to: 'orders#create'
 
-  ActiveAdmin.routes(self)
 end
 
 

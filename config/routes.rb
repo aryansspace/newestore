@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  get 'orders/new'
   devise_for :admin_users, ActiveAdmin::Devise.config
   get 'products/index'
   get 'products/show'
@@ -7,7 +8,7 @@ Rails.application.routes.draw do
   get 'categories/index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
  root 'categories#index'
- 
+
   resources :products, only: :show do
     collection do
       get 'products_index'
@@ -27,6 +28,9 @@ Rails.application.routes.draw do
   # New 
   get '/cart', to: 'order_items#index'
   resources :order_items, path: '/cart/items'
+  
+  get '/cart/checkout', to: 'orders#new', as: :checkout
+  patch '/cart/chekout', to: 'orders#create'
 
   ActiveAdmin.routes(self)
 end

@@ -28,9 +28,9 @@ Rails.application.routes.draw do
   # New 
   get '/cart', to: 'order_items#index'
   resources :order_items, path: '/cart/items'
-  
+
   get '/cart/checkout', to: 'orders#new', as: :checkout
-  patch '/cart/chekout', to: 'orders#create'
+  patch '/cart/checkout', to: 'orders#create'
 
   ActiveAdmin.routes(self)
 end

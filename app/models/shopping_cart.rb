@@ -32,6 +32,19 @@ class ShoppingCart
         update_sub_total!
       end
     end
+
+    def update_item(product_id:, quantity:)
+      product = Product.find(product_id)
+      order_item = order.items.find_or_initialize_by(
+        product_id: product_id
+      )
+      order_item.price = product.price
+      order_item.quantity = quantity
+      ActiveRecord::Base.transaction do
+        order_item.save
+        update_sub_total!
+      end
+    end
   
     def remove_item(id:)
       ActiveRecord::Base.transaction do

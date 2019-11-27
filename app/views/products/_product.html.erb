@@ -1,21 +1,23 @@
 <div class="column is-one-third">
-<div class="card product">
-  <div class="card-content">
-    <p class="title is-4">
-        <% if name_is_link %>
-          <%= link_to product.title, product %>
-        <% else %>
-          <%= product.title %>
-        <% end %>
-    </p>
-    <ul>
-      <li>
-        <strong>description:</strong> <%= product.description%>
-      </li>
-      <li>
-        <strong>price:</strong> <%= product.price %>
-      </li>
-    </ul>
+  <div class="card product">
+    <div class="card-content">
+      <div class="card-color: $main-color">
+        <p class="title is-4" >
+          <% if name_is_link %>
+            <%= link_to product.title, product %>
+          <% else %>
+            <%= product.title %>
+          <% end %>
+        </p>
+        <ul>
+          <li>
+            <strong>description:</strong> <%= product.description%>
+          </li>
+          <li>
+            <strong>price:</strong> <%= product.price %>
+          </li>
+        </ul>
+      </div>
     </div>
   </div> 
 </div>

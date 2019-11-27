@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+$myfont: Helvetica, sans-serif;
+$backcolor:#42c2f5;
+
+ #sign_up, #edit, #login{
+     width:70%;
+     margin: auto;
+     margin-top: 10px;
+     background-color: $backcolor;
+     border: 0.5px solid black;
+     padding:10px;
+     font-family: 100% $myfont;
+     h2{
+         font-size: 20px;
+         color: white;
+         margin-bottom: 15px;
+         margin-left: 45%;
+        // margin: auto;
+     }
+    label{
+        margin-bottom: 10px;
+    }
+    div > *{
+        margin-bottom: 5px;
+    }
+ }
+
+//  #dott
+//  {
+//      margin-bottom: 10px;
+//  }

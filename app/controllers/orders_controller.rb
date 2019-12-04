@@ -1,7 +1,10 @@
+# frozen_string_literal: true
+
 class OrdersController < ApplicationController
   def new
     @order = current_cart.order
   end
+
   def create
     @order = current_cart.order
 

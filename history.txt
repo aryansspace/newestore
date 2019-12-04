@@ -1,0 +1,568 @@
+  721  rails db:migrate
+  722  rails db:seed
+  723  rails g active_admin:resource Category
+  724  rails g active_admin:resource Customer
+  725  rails g active_admin:resource Product
+  726  rails g active_admin:resource Order
+  727  bundle install
+  728  rails s
+  729  rails -v
+  730  rails g controller products index show
+  731  rails active_storage:install
+  732  rails db:migrate
+  733  rails s
+  734  rails db:seed
+  735  bundle install
+  736  yarn install --check-files
+  737  rails s
+  738  C:/Users/nirav/AppData/Local/Programs/Python/Python37-32/python.exe -m pip install -U autopep8 --user
+  739  python scrapper.py
+  740  pip install requests bs4
+  741  sudo apt install python-pip
+  742  pip install requests bs4
+  743  python scrapper.py
+  744  ls
+  745  C:/Users/nirav/AppData/Local/Programs/Python/Python37-32/python.exe -m pip install -U autopep8 --user
+  746  ls
+  747  python scrapper.py
+  748  C:/Users/nirav/AppData/Local/Programs/Python/Python37-32/python.exe -m pip install -U black --user
+  749  python scrapper.py
+  750  C:/Users/nirav/AppData/Local/Programs/Python/Python37-32/python.exe -m pip install -U yapf --user
+  751  python scrapper.py
+  752  rails db:seed
+  753  bundle install
+  754  rails db:seed
+  755  rails s
+  756  rails s
+  757  ralils s
+  758  rails s
+  759  ls
+  760  rails s
+  761  rake s
+  762  bundle install
+  763  gem install json -v '1.8.1'
+  764  bundle install
+  765  rake s
+  766  bundle install
+  767  gem install json -v '1.8.1' --source 'https://rubygems.org/'
+  768  rails s
+  769  gem install json -v '1.8.1' --source 'https://rubygems.org/'
+  770  bundle install
+  771  gem install json -v 1.8.3
+  772  bundle update
+  773  gem install bundler
+  774  bundle update
+  775  gem install json -v 1.8.3
+  776  rake
+  777  bundle update
+  778  bundle update json
+  779  rake s
+  780  bundle update
+  781  rails s
+  782  bundle install
+  783  rails s
+  784  bundle install
+  785  bundle update json
+  786  gem install bundler
+  787  bundle update
+  788  rails s
+  789  bundle install
+  790  gem install json -v '1.8.3'
+  791  sudo apt-get install libgmp3-dev
+  792  bundle install
+  793  bundle update json
+  794  rake s
+  795  xcode-select --install
+  796  yum -y install ruby-devel gcc
+  797  bundle install --path vendor/bundle
+  798  rake doc:app
+  799  rails s
+  800  bundle install
+  801  rails -v
+  802  rails --version
+  803  rails -h
+  804  gem install json
+  805  rails s
+  806  gem install bundler
+  807  rails s
+  808  bundle install
+  809  gem install json -v 1.8.1
+  810  gem install json
+  811  rake s
+  812  bundle install
+  813  gem install json -v '1.8.1' --source 'https://rubygems.org/'
+  814  rails
+  815  srails s
+  816  rails s
+  817  rails --version
+  818  rails s
+  819  rake
+  820  rails
+  821  bundle install
+  822  rails
+  823  bundle install
+  824  rspec
+  825  rails
+  826  rbenv install 2.3.1
+  827  rbenv install 2.4.1
+  828  rails
+  829  ruby -v
+  830  rails
+  831  gem install json
+  832  rails s
+  833  gem install json -v 1.8.14
+  834  em install json -v 1.8.1
+  835  gem install json -v 1.8.1
+  836  sudo apt-get install libgmp3-dev
+  837  gem install json -v '1.8.1'
+  838  update_rubygems
+  839  gem install rails
+  840  rails s
+  841  bundle install
+  842  gem install json -v '1.8.1'
+  843  gem install rails
+  844  rails app:update
+  845  rake doc:app
+  846  bundle install
+  847  rails app:update
+  848  gem install activesupport
+  849  rails app:update
+  850  bundle install
+  851  rake rails:update
+  852  bundle update
+  853  gem install railties
+  854  bundle update
+  855  rails s
+  856  bundle install --without production
+  857  rails db:migrate
+  858  rails s
+  859  rails db:migrate
+  860  rails s
+  861  rails db:migrate
+  862  rails test
+  863  rails s
+  864  rails db:seed
+  865  rails s
+  866  Rails new Ecomm
+  867  rails new Ecomm
+  868  rails g migration add_name_to_users name:string
+  869  rails db:migrate
+  870  rails g devise:views
+  871  bundle install
+  872  rails g simple_form:install
+  873  rails g controller store index
+  874  rails g devise:install
+  875  rails g devise User
+  876  rails db:migrate
+  877  rails s
+  878  rails generate devise:views
+  879  rails generate devise:controllers [scope]
+  880  rails d devise:controllers [scope]
+  881  rails destroy devise:controllers [scope]
+  882  rails generate devise:controllers users
+  883  rails generate migration AddAddressToUsers address:string
+  884  rails db:migrate
+  885  rails s
+  886  bundle install
+  887  rails s
+  888  rails db:migrate
+  889  rails db:seed
+  890  bundle install
+  891  rails db:seed
+  892  rails s
+  893  rails new Store
+  894  rails new store -T -d postgresql
+  895  rails db:seed
+  896  rails s
+  897  ls
+  898  rails g model product title description:text price:decimal
+  899  rails g model category title
+  900  rails g model product_variant title price:decimal
+  901  rails g model order first_name last_name sub_total:decimal
+  902  rails g model order_item quantity:integer price:decimal
+  903  rails g migration add_product_to_product_variants product:belongs_to
+  904  rails g migration add_order_item_to orders order:belongs_to
+  905  rails g model product_category product:belongs_to category:belongs_to
+  906  rails db:create
+  907  apt-get install postgresql-9.5
+  908  apt-get install postgresql
+  909  sudo apt-get update
+  910  sudo apt-get install postgresql postgresql-contrib
+  911  rails db:create
+  912  sudo apt-get install wget ca-certificates
+  913  wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+  914  sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+  915  sudo apt-get update
+  916  sudo apt-get install postgresql postgresql-contrib
+  917  sudo su - postgres
+  918  sudo apt-get update
+  919  sudo apt-get install postgresql postgresql-contrib
+  920  pg_ctlcluster 9.4 main start
+  921  sudo su - postgres
+  922  sudo /etc/init.d
+  923  sudo systemctl start postgresql
+  924  sudo -u postgres createuser -s npatel55
+  925  sudo su - postgres
+  926  sudo -u postsudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"
+  927  sudo service postgresql start
+  928  rails db:create
+  929  su - postgres
+  930  sudo su - postgres
+  931  createuser --help
+  932  createuser -P -s -e npatel55
+  933  sudo service postgresql start
+  934  bundle install
+  935  rails db:create
+  936  sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"
+  937  nano config//database.yml
+  938  rails db:create
+  939  sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"CREATE USER davide WITH PASSWORD 'jw8s0F4';
+  940  sudo -u postgres psql -c "CREATE ROLE npatel55 WITH PASSWORD 'Nipat95@';";
+  941  rails db:create
+  942  sudo -u postgres createuser -s npatel55 -P
+  943  rails db:create
+  944  sudo -u postgres psql -c "ALTER ROLE 'npatel55' WITH LOGIN;"
+  945  sudo su - postgres
+  946  rails db:seed
+  947  rails g controller products index show
+  948  rake routes
+  949  rails db:seed
+  950  bundle install
+  951  rails db:seed
+  952  gem install pg
+  953  sudo -u postgres createuser -s sammy -P
+  954  sudo apt install postgresql postgresql-contrib libpq-dev
+  955  sudo apt update
+  956  sudo -u postgres createuser -s npatel55 -P
+  957  sudo apt install postgresql postgresql-contrib libpq-dev
+  958  su - postgres
+  959  gem install pg
+  960  su - postgres
+  961  rails db:create
+  962  sudo apt-get -purge remove postgresql
+  963  sudo -u postgres createuser -s rpeerzada -P
+  964  sudo apt-get --purge remove postgresql*
+  965  sudo apt-get install postgresql postgresql-contrib
+  966  sudo service postgesql start
+  967  sudo service postgresql start
+  968  sudo -u postgres createuser -s npatel55 -P
+  969  rails db:create
+  970  rails db:migrate
+  971  rails db:rollback
+  972  rails db:migrate
+  973  rails db:rollback
+  974  rails db:migrate
+  975  rails c
+  976  rails db:migrate
+  977  rails c
+  978  bundle install
+  979  rails g controller categories
+  980  rails s
+  981  gem update --system
+  982  bundle update --bundler
+  983  gem install solargraph
+  984  bundle update --bundler
+  985  gem install bundler:2.0.2
+  986  bundle install
+  987  rails g migration AddStockQuantityToProducts stock_quantity:integer
+  988  rails db:migrate
+  989  rails s
+  990  sudo services start postgresql
+  991  sudo services postgresql start
+  992  sudo service postgresql start
+  993  rails g controller order_items create
+  994  rails g migration add_token_to_orders token:string
+  995  rails generate migration add_token_to_orders token:string
+  996  ls
+  997  rails g migration add_token_to_orders token:string
+  998  rails db:migrate
+  999  rails g migration change_column orders, :last_name, :string, :null => true
+ 1000  rails db:migrate
+ 1001  rails g migration add_product_to_order_items product:belongs_to
+ 1002  rails db:migrate
+ 1003  rails g controller orders
+ 1004  rails g migration add_status_to orders status
+ 1005  rails db:migrate
+ 1006  rails c
+ 1007  rails db:seed
+ 1008  bundle install
+ 1009  rails db:seed
+ 1010  rails c
+ 1011  bundle install
+ 1012  rails g active_admin:install
+ 1013  rails db:migrate
+ 1014  rails db:seed
+ 1015  rails g active_admin:resource Category
+ 1016  rails g active_admin:resource Product
+ 1017  rails g active_admin:resource ProductCategory
+ 1018  rails g active_admin:resource ProductVariant
+ 1019  bundle install
+ 1020  rails c
+ 1021  rails active_storage:install
+ 1022  rails s
+ 1023  rails db:reset
+ 1024  rake db:reset
+ 1025  heroku pg:reset
+ 1026  rails s
+ 1027  git@github.com:niravrnirav/RailsNewStore.git
+ 1028  git remote add origin git@github.com:niravrnirav/RailsNewStore.git
+ 1029  git push -u origin master
+ 1030  sudo service postgres start
+ 1031  sudo service postgre start
+ 1032  sudo service postgresql start
+ 1033  rails s
+ 1034  sudo service postgresql start
+ 1035  rails s
+ 1036  sudo service postgresql start
+ 1037  rails s
+ 1038  sudo service postgresql start
+ 1039  rails s
+ 1040  sudo service postgresql start
+ 1041  rails s
+ 1042  cd rails
+ 1043  ls
+ 1044  rails s
+ 1045  rails db:reset
+ 1046  rails db:migrate
+ 1047  rails db:seed
+ 1048  rails seed
+ 1049  rails db:seed
+ 1050  rails s
+ 1051  rails c
+ 1052  sudo service postgresql start
+ 1053  rails s
+ 1054  bundle install
+ 1055  rails c
+ 1056  Category.sample(1)
+ 1057  sudo apt-get install imagemagick
+ 1058  sudo service postgresql start
+ 1059  rails s
+ 1060  sudo service postgresql start
+ 1061  rails s
+ 1062  rails bundle install
+ 1063  bundle install
+ 1064  rails g devise:install
+ 1065  rails g simple_form:install
+ 1066  rails g devise:install
+ 1067  rails g devise User
+ 1068  rails db:migrate
+ 1069  rails g migration add_name_to_users name:string
+ 1070  rails db:migrate
+ 1071  sudo service postgresql start
+ 1072  rails s
+ 1073  rails g migration add_address_to_users address:string postal_code:string city:string province:string
+ 1074  rails db:migration
+ 1075  rails g active_admin:resource users
+ 1076  rails generate active_admin:resource users
+ 1077  rails generate active_admin:resource user
+ 1078  sudo service postgresql start
+ 1079  rails s
+ 1080  sudo service postgresql start
+ 1081  rails s
+ 1082  bundle exec rails webpacker:install
+ 1083  bundle exec rails webpacker:install:vue
+ 1084  sudo service postgresql start
+ 1085  rails s
+ 1086  rails c
+ 1087  rails g active_admin:resource Order
+ 1088  gem install carrierwave
+ 1089  bundle install
+ 1090  rails generate uploader Avatar
+ 1091  ls
+ 1092  bundle install
+ 1093  rails g uploader Avatar
+ 1094  rails g uploader Image
+ 1095  gem install carrierwave
+ 1096  rails g uploader Avatar
+ 1097  gem install carrierwave
+ 1098  bundle install
+ 1099  bundle info carrierwave
+ 1100  rails g uploader Avatar
+ 1101  gem install carrierwave
+ 1102  bundle install
+ 1103  bundle info carrierwave
+ 1104  rails g uploader Avatar
+ 1105  rails generate uploader Avatar
+ 1106  rails g uploader Avatar
+ 1107  gem uninstall carrierwave
+ 1108  bundle install
+ 1109  bundle info carrierwave
+ 1110  rails g uploader Avatar
+ 1111  bundle install
+ 1112  rails db:migrate
+ 1113  sudo service postgresql start
+ 1114  rails db:migrate
+ 1115  rails s
+ 1116  rails
+ 1117  rails s
+ 1118  bundle install
+ 1119  rails s
+ 1120  rails g migraton AddImageToUsers image:string
+ 1121  rails g migration AddImageToProducts
+ 1122  rails db:migrate
+ 1123  sudo service postgresql start
+ 1124  rails s
+ 1125  psql
+ 1126  \list
+ 1127  \c
+ 1128  \l
+ 1129  \connect
+ 1130  \list
+ 1131  sudo apt install list
+ 1132  \l
+ 1133  \?
+ 1134  /l
+ 1135  /?
+ 1136  \list
+ 1137  xit
+ 1138  exit
+ 1139  sudo snap install heroku --classic
+ 1140  heroku login
+ 1141  heroku create
+ 1142  git push heroku master
+ 1143  heroku open
+ 1144  heroku logs --tail
+ 1145  heroku open
+ 1146  heroku logs --tail
+ 1147  heroku run rails db:migrate
+ 1148  heroku logs --tail
+ 1149  bundle install
+ 1150  heroku open
+ 1151  git remote -v
+ 1152  git push heroku master
+ 1153  gem
+ 1154  gem list sqlite3
+ 1155  gem uninstall sqlite3
+ 1156  heroku open
+ 1157  heroku logs --tail
+ 1158  heroku run rake db:migrate
+ 1159  heroku ps:scale web=1
+ 1160  heroku ps
+ 1161  heroku open
+ 1162  heroku logs
+ 1163  heroku logs --tail
+ 1164  heroku run rails db:seed
+ 1165  heroku run rails c
+ 1166  heroku addons
+ 1167  heroku open
+ 1168  heroku run rails db:seed
+ 1169  heroku run rails db:migrate
+ 1170  heroku ps:scale web=1
+ 1171  heroku ps
+ 1172  heroku open
+ 1173  heroku db:push
+ 1174  heroku pg:push
+ 1175  bundle install
+ 1176  heroku db:push
+ 1177  \c
+ 1178  su - postgres
+ 1179  su - npatel55
+ 1180  sudo -u postgres psql postgres
+ 1181  heroku pg:push
+ 1182  heroku pg:push store_development postgresql-vertical-26401 --app calm-scrubland-61738
+ 1183  heroku pg:reset
+ 1184  heroku pg:reset --confirm calm-scrubland-61738
+ 1185  heroku pg:push store_development postgresql-vertical-26401 --app calm-scrubland-61738
+ 1186  heroku apps:rename RailsFinalProject
+ 1187  heroku apps:rename railsfinalproject
+ 1188  heroku apps:rename railsfinalecomm
+ 1189  git remote rm heroku
+ 1190  heroku git:remote -a railsfinalecomm
+ 1191  heroku open
+ 1192  sudo service postgresql start
+ 1193  rails s
+ 1194  gem list
+ 1195  sudo service postgresql start
+ 1196  heroku
+ 1197  gem info heroku
+ 1198  heroku --version
+ 1199  ruby --v
+ 1200  ruby -v
+ 1201  heroku logs --tail
+ 1202  history | grep "push"
+ 1203  history | grep ""
+ 1204  rails --v
+ 1205  rails -v
+ 1206  sudo service postgresql start
+ 1207  rails s
+ 1208  sudo service postgresql start
+ 1209  git push heroku master
+ 1210  sudo service postgresql start
+ 1211  rails s
+ 1212  git push hero master
+ 1213  git push heroku master
+ 1214  sudo servicec posgresql start
+ 1215  sudo service posgresql start
+ 1216  sudo service postgresql start
+ 1217  rails s
+ 1218  sudo service postgresql start
+ 1219  rails s
+ 1220  pg_dump -F t storedom_development > development_backup.tar
+ 1221  pg_dump -F t store_development > development_backup.tar
+ 1222  rails s
+ 1223  sudo start postgresql start
+ 1224  sudo service postgresql start
+ 1225  rails g model Province name:string tax:double
+ 1226  rails db:migrate
+ 1227  rails g migration AddProvinceToUser
+ 1228  rails db:migrate
+ 1229  rails db:rollback
+ 1230  rails db:migrate
+ 1231  rails s
+ 1232  history | grep ""
+ 1233  sudo service postgresql start
+ 1234  rails s
+ 1235  rails db:rollback
+ 1236  rails s
+ 1237  sudo service postgresql start
+ 1238  rails s
+ 1239  yarn add vue-turbolinks
+ 1240  erails s
+ 1241  ails s
+ 1242  rails s
+ 1243  npm install @types/vue-turbolinks
+ 1244  rails
+ 1245  rails s
+ 1246  gem install solargraph
+ 1247  rails s
+ 1248  bundle install
+ 1249  rails s
+ 1250  rails g migration add_province_to_users refererences:province
+ 1251  rails g db:migrate
+ 1252  rails db:migrate
+ 1253  rails db:rollback
+ 1254  rails g migration add_province_fk_to_users
+ 1255  rails g active_admin:resource Province
+ 1256  rails db:migrate
+ 1257  rails g active_admin:resource User
+ 1258  rails g migration remove_province_from_users province:string
+ 1259  rails db:migration
+ 1260  rails db:migrate
+ 1261  sudo service postgresql start
+ 1262  rails s
+ 1263  rails g active_admin:resource User
+ 1264  rails s
+ 1265  sudo service postgresql start
+ 1266  rails s
+ 1267  sudo start postgresql start
+ 1268  ls
+ 1269  sudo service postgresql start
+ 1270  rails s
+ 1271  sudo service postgresql start
+ 1272  rails s
+ 1273  sudo service postgresql start
+ 1274  rails s
+ 1275  bundle install
+ 1276  rubocop -c rubocop.yml
+ 1277  rubocop -c rubocop.yml --safe-auto-correct
+ 1278  rubocop -c rubocop.yml
+ 1279  rubocop -c rubocop.yml --safe-auto-correct
+ 1280  rubocop -c rubocop.yml
+ 1281  sudo service postgresql start
+ 1282  rails s
+ 1283  rubocop -c rubocop.yml
+ 1284  history | grep ""
+ 1285  sudo service postgresql start
+ 1286  rails s
+ 1287  rubocop -c rubocop.yml
+ 1288  history | grep ""

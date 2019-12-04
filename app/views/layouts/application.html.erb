@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Estore</title>
+    <title>Store</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <%= csrf_meta_tags %>
   </head>
-
-  <body>
-    <p>
-    <%= link_to "Home", root_path %> |
-    <%= link_to pluralize(current_cart.items_count, 'item'), cart_path %>
-  </p>
-
-  <hr />
-
-  <nav id="app" class="navbar is-info" role="navigation" aria-label="main navigation">
+     <body class="<%= yield (:body_class) %>">
+      <% if flash[:notice] %>
+        <div class="notification is-success global-notification">
+          <p class="notice"><%= notice %></p>
+        </div>
+      <% end %>
+      <% if flash[:alert] %>
+      <div class="notification is-danger global-notification">
+        <p class="alert"><%= alert %></p>
+      </div>
+      <% end %>
+      <nav id="app" class="navbar is-warning" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <%= link_to root_path, class:"navbar-item" do %>
-            <h1 class="title is-5">Ecomm Project</h1>
+            <h1 class="title is-3">ECommerce Project</h1>
           <% end  %>
 
-          <a role="button" class="navbar-burger burger"aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <a role="button" class="navbar-burger burger" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
         </div>
 
-        <div id="navbarBasicExample" class="navbar-menu" >
+        <div id="navbarBasicExample" class="navbar-menu" v-bind:class="{ 'is-active' : showNav }">
 
           <div class="navbar-end">
             <div class="navbar-item">
 
-              <% if user_signed_in? %>
+              <% if user_signed_in?%>
                 <%= link_to "Home", root_path, class: "navbar-item" %>
-                <%= link_to "All Products", products_show_all_pros_path, class: "navbar-item is-white" %>
-                <%= link_to pluralize(current_cart.items_count, 'item'), cart_path, class: "navbar-item is-white" %>
+                <%= link_to "All Products", products_show_all_pros_path, class: "navbar-item" %>
+                <%= link_to pluralize(current_cart.items_count, 'item'), cart_path, class: "navbar-item" %>
                 <div class="navbar-item has-dropdown is-hoverable">
-                  <%= link_to 'Account', edit_user_registration_path, class: "navbar-link" %>
-                  <div class="navbar-dropdown is-right">
+                  <%= link_to 'Account', edit_user_registration_path, class: " navbar-link" %>
+                  <div class="navbar-dropdown is-right has-text-white">
                     <%= link_to current_user.name, edit_user_registration_path, class:"navbar-item" %>
                     <%= link_to "Log Out", destroy_user_session_path, method: :delete, class:"navbar-item" %>
                   </div>
                 </div>
               <% else %>
                 <div class="buttons">
-                  <%= link_to "Log In", new_user_session_path, class:" button is-primary" %>
+                  <%= link_to "Log In", new_user_session_path, class:" button has-background-black has-text-white-bis	" %>
                   <%= link_to "Sign up", new_user_registration_path, class:"button is-light"%>
                 </div>
               <% end %>
@@ -58,6 +60,12 @@
           </div>
         </div>
       </nav>
-    <%= yield %>
+
+    <%= yield(:header) %>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+    <%= javascript_pack_tag 'nav' %>
   </body>
 </html>
